@@ -21,9 +21,9 @@ const addNumbers = (...arguments) => {
        return sum;
 }
 
-console.log(addNumbers(1, 2, 3, 4))
+console.log("\nCase1 with simple function. The calculated sum is: " + addNumbers(1, 2, 3, 4) + "\n")
 
 //The reduce method takes a callback function as its first argument,
 //which takes two parameters: sum(the accumulator) and num(the current element being processed).
 const addNumbers1 = (...arguments1) => arguments1.reduce((sum, num) => sum + num, 0);
-console.log(addNumbers1(1,1,1,1))
+console.log("\nCase2 with one row function. The calculated sum is: " + addNumbers1(1, 2, 3, 4) + "\n")
