@@ -76,4 +76,4 @@ Exemplu 2:
 
 *Hint: Pentru a rezolva problema, vom folosi operatorul spread / rest (...) pentru a defini argumentele funcției:`const addNumber = (…argumente) ⇒ {}`*
 
-**Încărcă link-ul de Replit ce conţine rezolvările cerinţelor, folosind *Text reply.***
+**Încărcă link-ul de Replit ce conţine rezolvările cerinţelor, folosind *Text reply.*
