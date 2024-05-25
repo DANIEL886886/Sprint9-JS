@@ -74,5 +74,3 @@ Input: addNumber(1, 2, 3, 4, 5)
 Output: 15
 
 Hint: Pentru a rezolva problema, vom folosi operatorul spread / rest (...) pentru a defini argumentele funcției:const addNumber = (…argumente) ⇒ {}
-
-**Încărcă link-ul de Replit ce conţine rezolvările cerinţelor, folosind Text reply.
