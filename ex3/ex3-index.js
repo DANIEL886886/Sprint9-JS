@@ -13,21 +13,23 @@
 // const countLetterOccurrences = (string, letter) => (typeof string === "string") && (typeof letter === "string") ? for char in string ? count++ : "Invalid input: all input must be string";
 console.clear()
 
-const inputstring = "Ce mai faci"
-const inputletter = "a"
-
-if (typeof inputstring !== "string" && typeof inputletter !== "string") {
+const countLetterOccurrences = (string, letter) => {
+  let count = 0;
+  letter = letter.toLowerCase()
+  if (typeof inputstring !== "string" && typeof inputletter !== "string") {
   throw new Error ("Both arguments must be strings.");
 }
-
-const countLetterOccurrences = (string, letter) => {
-let count = 0;
   for (let i = 0; i < string.length; i++) {
  // string.toLowerCase function to convert all letters in lower case in order to count all letters 
-    if (string[i].toLowerCase() === letter.toLowerCase()) { count++; }
+    if (string[i].toLowerCase() === letter) {
+      count++;
     }
-    return count;
+  }
+  return count;
 };
+
+const inputstring = "Ce mai faci si inca 2 de aa"
+const inputletter = "a"
 
 console.log("\nStringul ce trebuie analizat este: " + inputstring + "\n")
 console.log("\nLitera care urmeaza sa fie numarata este: " + inputletter + "\n")
