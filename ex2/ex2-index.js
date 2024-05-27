@@ -13,6 +13,11 @@
 // Singura regulă impusă este respectarea intervalului dat de parametrii de început și de sfârșit.*
 //.................................................................................................................................
 
-const getRandomNumber = (start, end) => (start < end) && (typeof start === "number") && (typeof end === "number") ? Math.floor(Math.random() * (end - start)) : "Invalid input: start must be less than end";
+const getRandomNumber = (start, end) => (start < end) && (typeof start === "number") && (typeof end === "number") ? Math.floor(Math.random() * (end - start) + start) : "Invalid input: start must be less than end";
 //added protection in the function to verify that typeof start & end is number and that start needs to be < end. 
-console.log(getRandomNumber(2, 243))
+console.log(getRandomNumber(200, 243))
+// output 215 
+console.log(getRandomNumber(243, 243))
+// output Invalid input: start must be less than end
+console.log(getRandomNumber(242, 243))
+// output 242
